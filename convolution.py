@@ -7,7 +7,7 @@ class Convolutional(Layer):
         # Lets say input is a RGB image of dimension 24 pixels (height) * 24 pixels (width)
         # So input_shape is 3 * 24 * 24
         # For simplicity, let's consider kernel_size is 2 * 2
-        # Depth is the number of kernels we're using in each layer of the kernel
+        # Depth is the number of layers of kernel
         input_depth, input_height, input_width = input_shape
         self.depth = depth
         self.input_shape = input_shape
@@ -16,7 +16,7 @@ class Convolutional(Layer):
         # Here Y is the shape of output matrix, I is the shape of input matrix and K is the shape of kernel
         self.output_shape = (depth, input_height - kernel_size + 1, input_width - kernel_size +1)
         # Lets say there are 2 layers of kernel and we know the depth of input image (input_depth) is 3, then depth is 2
-        # Then the overall kernel shape is dept(2) * input_depth (3) * kernel_size(2*2) * kernel_size(2*2)
+        # Then the overall kernel shape is depth (2) * input_depth (3) * kernel_size(2*2) * kernel_size(2*2)
         self.kernels_shape = (depth, input_depth, kernel_size, kernel_size)
         self.kernels = np.random.randn(*self.kernels_shape)
         self.biases = np.random.randn(*self.output_shape)
