@@ -4,7 +4,7 @@ def predict(network, input):
         output = layer.forward(output)
     return output
 
-def train(network, x_train, y_train, loss, loss_prime, learning_rate = 0.1, epochs = 100, verbose = True):
+def train(network, x_train, y_train, loss, loss_prime, learning_rate = 0.1, epochs = 1000, verbose = True):
     # Train the model
     for e in range(epochs):
         error = 0
