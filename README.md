@@ -52,13 +52,13 @@ train(
 ## Parameters
 Parameters of the `train` method are as follows
 * network:
-  *To be updated...
+  * ⚠️ Work in progress ⚠️
 
 * x_train and y_train :
   * x_train is the preprocessed input variable and y_train is the preprocessed target variable for training the neural network.
 
 * loss :
-  * To be updated...
+  * ⚠️ Work in progress ⚠️
 
 * loss_prime :
   * Derivative of the loss function.
@@ -67,7 +67,7 @@ Parameters of the `train` method are as follows
   * Verbose is a flag variable thatis set to `True` by default, to display the loss after every epoch is completed.
 
 ## Working of the model
-To be updated...
+⚠️ Work in progress ⚠️
 
 ## Intuition
-To be updated...
+⚠️ Work in progress ⚠️
